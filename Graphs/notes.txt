@@ -1,0 +1,9 @@
+Depth First Search: Stack (Last in first out)
+Breadth First Search: Queue (First in first out)
+
+DFS can be done iteratively and recursively
+BFS can only be done iteratively
+
+Typically, Graphs have:
+    Time Complexity of O(e), where e is the number of edges
+    Space Complexity of O(n), where n is the number of nodes
