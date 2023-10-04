@@ -15,7 +15,7 @@ def hasPath(graph, source, destination, visited): # Solving recursively
     if source == destination: return True
     if source in visited: return False
     
-    visited.add(source)
+    visited.add(source) # Keep track of visited nodes
     
     for neighbourNode in graph[source]:
         if hasPath(graph, neighbourNode, destination, visited) == True: return True
