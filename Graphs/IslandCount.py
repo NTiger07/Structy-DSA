@@ -20,6 +20,8 @@ def islandCount(grid):
             
             
 def explore(grid, row, column, visited):
+    
+    # Base cases...
     rowInbounds = 0 <= row and row < len(grid) # When exploring to make sure we don't go out of bounds
     columnInbounds = 0 <= column and column < len(grid[0])
     if rowInbounds == False or columnInbounds == False: return False
@@ -29,7 +31,7 @@ def explore(grid, row, column, visited):
     if position in visited: return False
     visited.add(position)
     
-    # Now DFS...
+    # Now DFS... 
     explore(grid1, row - 1, column, visited) # Up
     explore(grid1, row + 1, column, visited) # Down
     explore(grid1, row, column - 1, visited) # Left
