@@ -24,7 +24,7 @@ def explore(graph, currentNode, visited):
     
     
     for neighbourNode in graph[currentNode]: #Explore all neighbours of Current Node
-        explore(graph, neighbourNode, visited)
+        explore(graph1, neighbourNode, visited)
         
     return True
     
